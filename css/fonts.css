@@ -21,9 +21,6 @@
   src: url("../fonts/pacifico/Pacificoregular.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/raleway/ralewaylight.ttf") format("ttf");
-  src: url("../fonts/raleway/ralewaylight.woff") format("woff");
-  src: url("../fonts/raleway/ralewaylight.woff2") format("woff2");
 }
 
 @font-face {
@@ -38,7 +35,8 @@
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/Icons/icomoon.eot?18k5kp");
-  src: url("../fonts/Icons/icomoon.eot?18k5kp#iefix") format("embedded-opentype"),
+  src: url("../fonts/Icons/icomoon.eot?18k5kp#iefix")
+      format("embedded-opentype"),
     url("../fonts/Icons/icomoon.ttf?18k5kp") format("truetype"),
     url("../fonts/Icons/icomoon.woff?18k5kp") format("woff"),
     url("../fonts/Icons/icomoon.svg?18k5kp#icomoon") format("svg");
