@@ -3,7 +3,8 @@
   src: url("../fonts/raleway/ralewaybold.ttf") format("ttf");
   src: url("../fonts/raleway/ralewaybold.woff") format("woff");
   src: url("../fonts/raleway/ralewaybold.woff2") format("woff2");
-  font-weight: bold;
+  font-weight: 700;
+  /* font-style: bold; */
 }
 
 @font-face {
@@ -23,14 +24,7 @@
   font-weight: normal;
 }
 
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/raleway/ralewaybold.ttf") format("ttf");
-  src: url("../fonts/raleway/ralewaybold.woff") format("woff");
-  src: url("../fonts/raleway/ralewaybold.woff2") format("woff2");
-  font-weight: 700;
-  /* font-style: bold; */
-}
+
 
 @font-face {
   font-family: "icomoon";
