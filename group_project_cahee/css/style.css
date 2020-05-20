@@ -1,0 +1,117 @@
+@import "normalize.css";
+@import "fonts.css";
+
+html {
+    font-family: "Raleway", sans-serif;
+}
+.subscription__block {
+    position: relative;
+    margin-bottom: -4px;
+}
+
+.subscription__block-img img {
+    width: 100%;
+}
+
+
+.subscription__block-container {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px;
+    position: absolute;
+}
+
+.subscription__block-container--title {
+    /* padding-left: 40px; */
+    font-size: 50px;
+    letter-spacing: 2px;
+
+}
+
+.subscription__block-container--sub-title {
+    margin-top: 35px;
+    font-size: 17px;
+    width: 60%;
+
+}
+
+.subscription__block-container--button {
+    margin-top: 35px;
+}
+
+.subscription__block-container--button [type="email"] {
+    margin-right: 30px;
+    padding: 15px;
+    width: 60%;
+    border: none;
+}
+
+.subscription__block-container--button [type="submit"] {
+    padding: 13px;
+    margin-top: 15px;
+    font-size: 20px;
+    background-color: #96b92c;
+    color: #f9fbf5;
+    border: none;
+    outline: none;
+}
+
+.subscription__block-container--button [type="email"]:focus {
+    border-left: 5px solid #96b92c;
+}
+
+.subscription__block-container--button [type="submit"]:hover {
+    cursor: poiner;
+
+}
+
+
+
+
+@media (min-width: 992px) {
+    .subscription__block-container {
+        width: 100%;
+        padding: 20px;
+
+    }
+
+    .subscription__block-container--title {
+        font-size: 30px;
+        padding: 0 10px 0 20px;
+    }
+
+    .subscription__block-container--sub-title {
+        width: 100%;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .subscription__block-img img {
+        /* max-width: 992px; */
+
+    }
+
+
+
+}
+
+@media (min-width: 768px) {
+    .subscription__block-container {
+        width: 100%;
+        padding: 20px;
+
+    }
+
+    button.subscription__block-container--button [type="submit"] {
+        margin-top: 12px;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .subscription__block-container--button button [type="submit"] {
+        min-width: 200px;
+    }
+}
