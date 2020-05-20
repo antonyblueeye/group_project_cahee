@@ -1,3 +1,230 @@
 @import "normalize.css";
 @import "fonts.css";
 
+/* display flex */
+
+.header-inner,
+.header-fresh-life-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/*  -----  */
+
+.header-outer {
+  background: url("../img/fresh-life-bg.png") no-repeat center;
+  background-size: cover;
+}
+
+.header-inner {
+  width: 80%;
+  height: 100vh;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 58px 0;
+}
+
+.header-nav__logo {
+  position: relative;
+  cursor: pointer;
+  font-family: "Pacifico";
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.header-nav__logo::first-letter {
+  font-size: 65px;
+}
+
+.header-nav-menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.header-nav-menu-burger {
+  display: none;
+}
+
+.header-nav-menu__item {
+  padding-top: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #262626;
+  position: relative;
+}
+
+.header-nav-menu__item::before {
+  position: absolute;
+  content: "";
+  border-top: 4px solid #ff6033;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+
+.header-nav-menu__item:hover::before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.header-nav-menu li:nth-child(n + 2) {
+  margin-left: 40px;
+}
+
+.header-fresh-life {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header-fresh-life-content {
+  width: 380px;
+  padding-bottom: 100px;
+}
+
+.header-fresh-life-content__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 90px;
+  color: #262626;
+}
+
+.header-fresh-life-content__text,
+.header-fresh-life-content__button {
+  font-family: "Raleway", sans-serif;
+}
+
+.header-fresh-life-content__text {
+  font-size: 17px;
+  line-height: 25px;
+  color: #262626;
+}
+
+.header-fresh-life-content__button {
+  margin-top: 23px;
+  width: 200px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2.5;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background: #ff6033;
+  box-shadow: 1px 2px 5px 1px #262626;
+  transition: 0.3s ease-in;
+}
+
+.header-fresh-life-content__button:hover {
+  background: #ce502d;
+}
+
+@media screen and (max-width: 992px) {
+  .header-nav-menu {
+    display: none;
+  }
+  .header-nav-menu-burger {
+    display: block;
+  }
+  .header-nav-menu-burger input {
+    opacity: 0;
+  }
+  .header-nav-menu-burger__button {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+  .header-nav-menu-burger__button span,
+  .header-nav-menu-burger__button span::before,
+  .header-nav-menu-burger__button span::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #262626;
+    transition: 0.2s ease-in;
+  }
+  .header-nav-menu-burger__button span {
+    top: 20px;
+  }
+  .header-nav-menu-burger__button span::before {
+    content: "";
+    top: -10px;
+  }
+  .header-nav-menu-burger__button span::after {
+    content: "";
+    top: 10px;
+  }
+  .header-nav-menu-burger-list {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s ease-in;
+  }
+
+  .header-nav-menu-burger-list li {
+    padding: 10px 0;
+  }
+
+  .header-nav-menu-burger input:checked ~ .header-nav-menu-burger-list {
+    top: 0;
+    left: 0;
+    background: rgba(63, 60, 60, 0.96);
+  }
+
+  .header-nav-menu-burger-list__item {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 25px;
+    color: seashell;
+  }
+
+  .header-nav-menu-burger-list__item:hover {
+    color: rgb(216, 198, 186);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-fresh-life-content {
+    width: 250px;
+  }
+  .header-fresh-life-content__title {
+    font-size: 45px;
+  }
+  .header-fresh-life-content__text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header-fresh-life-content__button {
+    width: 150px;
+    font-size: 15px;
+  }
+}

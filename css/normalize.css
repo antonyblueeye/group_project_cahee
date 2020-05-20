@@ -53,6 +53,18 @@ h5 {
 /* Grouping content
      ========================================================================== */
 
+/* List margins
+ */
+
+ ul {
+   margin: 0;
+   padding: 0;
+ }
+
+ li {
+   margin: 0;
+ }
+
 /**
    * 1. Add the correct box sizing in Firefox.
    * 2. Show the overflow in Edge and IE.

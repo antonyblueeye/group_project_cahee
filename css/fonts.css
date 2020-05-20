@@ -1,13 +1,24 @@
 @font-face {
-  font-family: "Raleway Bold";
+  font-family: "Raleway";
   src: url("../fonts/raleway/ralewaybold.ttf") format("ttf");
   src: url("../fonts/raleway/ralewaybold.woff") format("woff");
   src: url("../fonts/raleway/ralewaybold.woff2") format("woff2");
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: "Raleway Light";
-    src: url("../fonts/raleway/ralewaylight.ttf") format("ttf");
-    src: url("../fonts/raleway/ralewaylight.woff") format("woff");
-    src: url("../fonts/raleway/ralewaylight.woff2") format("woff2");
-  }
+  font-family: "Raleway";
+  src: url("../fonts/raleway/ralewaylight.ttf") format("ttf");
+  src: url("../fonts/raleway/ralewaylight.woff") format("woff");
+  src: url("../fonts/raleway/ralewaylight.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/pacifico/Pacificoregular.ttf") format("ttf");
+  src: url("../fonts/pacifico/Pacificoregular.woff") format("woff");
+  src: url("../fonts/pacifico/Pacificoregular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
