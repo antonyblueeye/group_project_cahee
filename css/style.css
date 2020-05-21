@@ -186,6 +186,27 @@ body {
     padding: 10px 0;
   }
 
+  .header-nav-menu-burger input:checked ~ .header-nav-menu-burger__button span {
+    transform: rotate(45deg);
+    background: white;
+  }
+  .header-nav-menu-burger
+    input:checked
+    ~ .header-nav-menu-burger__button
+    span::before {
+    transform: rotate(0deg);
+    background: white;
+    top: 0;
+  }
+  .header-nav-menu-burger
+    input:checked
+    ~ .header-nav-menu-burger__button
+    span::after {
+    transform: rotate(90deg);
+    background: white;
+    top: 0;
+  }
+
   .header-nav-menu-burger input:checked ~ .header-nav-menu-burger-list {
     top: 0;
     left: 0;
@@ -521,7 +542,7 @@ body {
 }
 
 .subscription-wrapper {
-  width:80%;
+  width: 80%;
   max-width: 1170px;
   position: relative;
   display: flex;
@@ -561,14 +582,14 @@ body {
   margin-top: 35px;
 }
 
-.subscription__block-container--button [type='email'] {
+.subscription__block-container--button [type="email"] {
   margin-right: 30px;
   padding: 15px;
   width: 60%;
   border: none;
 }
 
-.subscription__block-container--button [type='submit'] {
+.subscription__block-container--button [type="submit"] {
   padding: 13px;
   margin-top: 15px;
   font-size: 20px;
@@ -581,15 +602,14 @@ body {
   width: 200px;
   text-align: center;
   font-size: 20px;
-  
 }
 
-.subscription__block-container--button [type='email']:focus {
+.subscription__block-container--button [type="email"]:focus {
   border-left: 5px solid #96b92c;
   outline: none;
 }
 
-.subscription__block-container--button [type='submit']:hover {
+.subscription__block-container--button [type="submit"]:hover {
   cursor: pointer;
   background-color: #7d9927;
 }
@@ -602,7 +622,6 @@ body {
 
   .subscription__block-container--title {
     font-size: 30px;
-    
   }
 
   .subscription__block-container--sub-title {
@@ -610,7 +629,6 @@ body {
     margin-top: 15px;
     font-size: 20px;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -619,18 +637,18 @@ body {
     padding: 20px;
   }
 
-  button.subscription__block-container--button [type='submit'] {
+  button.subscription__block-container--button [type="submit"] {
     margin-top: 12px;
   }
 }
 
 @media (min-width: 576px) {
-  .subscription__block-container--button button [type='submit'] {
+  .subscription__block-container--button button [type="submit"] {
     min-width: 200px;
   }
 }
 
-@media (min-width:480px) {
+@media (min-width: 480px) {
   .subscription__block-container--title {
     font-size: 30px;
     font-weight: 400;
