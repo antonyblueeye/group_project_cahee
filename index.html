@@ -6,33 +6,179 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Group Project</title>
   </head>
-
   <body>
-    <header></header>
+    <header class="header-outer">
+      <section class="header-inner">
+        <div class="header-nav">
+          <h3 class="header-nav__logo">Cahee</h3>
+          <ul class="header-nav-menu">
+            <li><a href="#" class="header-nav-menu__item">Home</a></li>
+            <li><a href="#" class="header-nav-menu__item">About</a></li>
+            <li><a href="#" class="header-nav-menu__item">Services</a></li>
+            <li><a href="#" class="header-nav-menu__item">Gallery</a></li>
+            <li><a href="#" class="header-nav-menu__item">Blog</a></li>
+            <li><a href="#" class="header-nav-menu__item">Contact</a></li>
+          </ul>
+          <div class="header-nav-menu-burger">
+            <input type="checkbox" name="checkbox" id="burger-menu" />
+            <label for="burger-menu" class="header-nav-menu-burger__button">
+              <span></span>
+            </label>
+            <ul class="header-nav-menu-burger-list">
+              <li>
+                <a href="#" class="header-nav-menu-burger-list__item">Home</a>
+              </li>
+              <li>
+                <a href="#" class="header-nav-menu-burger-list__item">About</a>
+              </li>
+              <li>
+                <a href="#" class="header-nav-menu-burger-list__item"></a>
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#" class="header-nav-menu-burger-list__item">
+                  Gallery
+                </a>
+              </li>
+              <li>
+                <a href="#" class="header-nav-menu-burger-list__item">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="header-nav-menu-burger-list__item">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-fresh-life">
+          <div class="header-fresh-life-content">
+            <h2 class="header-fresh-life-content__title">Fresh Life</h2>
+            <span class="header-fresh-life-content__text">
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </span>
+            <a href="#" class="header-fresh-life-content__button">
+              Get free now
+            </a>
+          </div>
+        </div>
+      </section>
+    </header>
 
     <main>
-      <section class="services"></section>
-    </main>
-    <div class="subscription__block">
-      <div class="subscription__block-img">
-        <img src="../group_project_cahee/img/subscribe-to-us-bg.png" alt="" />
-      </div>
-      <div class="subscription__block-container">
-        <div class="subscription__block-container--title">Subscribe To Us</div>
-        <div class="subscription__block-container--sub-title">
-          Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+      <section class="services" id="services">
+        <div class="services-wrapper">
+          <div class="services-block">
+            <div class="services-block__item">
+              <a href="#" class="services-block__link">
+                <span class="services-block__text">Online Shopping</span>
+                <span class="services-block__icon icon-shopping"></span>
+              </a>
+            </div>
+
+            <div class="services-block__item">
+              <a href="#" class="services-block__link">
+                <span class="services-block__text">Quality Product</span>
+                <span class="services-block__icon icon-quality"></span>
+              </a>
+            </div>
+
+            <div class="services-block__item">
+              <a href="#" class="services-block__link">
+                <span class="services-block__text">
+                  Domestic & International Delivery
+                </span>
+                <span class="services-block__icon icon-delivery"></span>
+              </a>
+            </div>
+
+            <div class="services-block__item">
+              <a href="#" class="services-block__link">
+                <span class="services-block__text">Well Organized</span>
+                <span class="services-block__icon icon-organized"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="services-title"><span>Our services</span></div>
+          <img
+            src="img/our-services-img.png"
+            class="services-img__img"
+            alt=""
+          />
         </div>
-        <form
-          action=""
-          method="GET"
-          class="subscription__block-container--button"
-        >
-          <input type="email" placeholder="Your email address..." required />
-          <input type="submit" name="submit" value="SUBSCRIBE" />
-        </form>
+      </section>
+
+      <div class="gallery-outer">
+        <div class="block-gallery">
+          <h2 class="block-gallery__title">Gallery</h2>
+          <p class="block-gallery__text">
+            Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+
+          <div class="block-gallery-img">
+            <div class="block-gallery-img__first">
+              <img
+                class="img__first__one"
+                src="/img/block-gallery-peach.png"
+                alt="peach"
+              />
+              <div class="img__first__two">
+                <img
+                  id="img_first_two_one"
+                  src="/img/block-gallery-blackberry.png"
+                  alt="blueberries"
+                />
+                <img
+                  id="img_first_two_two"
+                  src="/img/block-gallery-blueberries.png"
+                  alt="blackberry"
+                />
+              </div>
+            </div>
+            <div class="block-gallery-img__second">
+              <img src="/img/block-gallery-plate.png" alt="plate" />
+              <img src="/img/block-gallery-persimmon.png" alt="persimmon" />
+            </div>
+          </div>
+          <div class="block-gallery-img__button">
+            <button type="submit">VIEW MORE</button>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
+    <section class="subscription-wrapper">
+      <div class="subscription__block">
+        <div class="subscription__block-img">
+          <img src="../group_project_cahee/img/subscribe-to-us-bg.png" alt="" />
+        </div>
+        <div class="subscription__block-container">
+          <div class="subscription__block-container--title">
+            Subscribe To Us
+          </div>
+          <div class="subscription__block-container--sub-title">
+            Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam.
+          </div>
+          <form
+            action=""
+            method="GET"
+            class="subscription__block-container--button"
+          >
+            <input type="email" placeholder="Your email address..." required />
+            <input type="submit" name="submit" value="SUBSCRIBE" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
 
     <footer></footer>
   </body>
