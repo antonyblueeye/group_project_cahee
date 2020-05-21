@@ -519,3 +519,120 @@ body {
     width: 50%;
   }
 }
+
+.subscription-wrapper {
+  width:80%;
+  max-width: 1170px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.subscription__block {
+  position: relative;
+  margin-bottom: -4px;
+}
+
+.subscription__block-img img {
+  width: 100%;
+}
+
+.subscription__block-container {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px;
+  position: absolute;
+}
+
+.subscription__block-container--title {
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.subscription__block-container--sub-title {
+  margin-top: 35px;
+  font-size: 24px;
+  width: 60%;
+}
+
+.subscription__block-container--button {
+  margin-top: 35px;
+}
+
+.subscription__block-container--button [type='email'] {
+  margin-right: 30px;
+  padding: 15px;
+  width: 60%;
+  border: none;
+}
+
+.subscription__block-container--button [type='submit'] {
+  padding: 13px;
+  margin-top: 15px;
+  font-size: 20px;
+  background-color: #96b92c;
+  color: #f9fbf5;
+  border: none;
+  outline: none;
+  box-shadow: 1px 2px 5px 1px #262626;
+  transition: 0.3s ease-in;
+  width: 200px;
+  text-align: center;
+  font-size: 20px;
+  
+}
+
+.subscription__block-container--button [type='email']:focus {
+  border-left: 5px solid #96b92c;
+  outline: none;
+}
+
+.subscription__block-container--button [type='submit']:hover {
+  cursor: pointer;
+  background-color: #7d9927;
+}
+
+@media (min-width: 992px) {
+  .subscription__block-container {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .subscription__block-container--title {
+    font-size: 30px;
+    
+  }
+
+  .subscription__block-container--sub-title {
+    width: 80%;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .subscription__block-container {
+    width: 80%;
+    padding: 20px;
+  }
+
+  button.subscription__block-container--button [type='submit'] {
+    margin-top: 12px;
+  }
+}
+
+@media (min-width: 576px) {
+  .subscription__block-container--button button [type='submit'] {
+    min-width: 200px;
+  }
+}
+
+@media (min-width:480px) {
+  .subscription__block-container--title {
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
